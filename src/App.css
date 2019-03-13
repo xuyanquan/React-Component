@@ -1,0 +1,114 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  text-align: center;
+}
+
+input {
+  outline: none;
+}
+
+.cpt-button {
+  padding: 5px;
+  color: #fff;
+  font-size: 12px;
+  background-color: rgb(240, 160, 12);
+  display: inline-block;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+}
+.cpt-button.disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.cpt-input {
+  border: 1px solid #a0a0a0;
+  border-radius: 3px;
+  padding: 4px 8px;
+  transition: border-color .35s;
+}
+.cpt-input:focus {
+  border-color: #13d;
+}
+
+.cpt-tabs {
+  padding: 16px 0;
+}
+/* .cpt-tabs-header {
+  padding: 16px;
+} */
+.cpt-tabs-title {
+  display: inline-block;
+  padding: 4px 8px;
+  border-bottom: 1px solid transparent;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.cpt-tabs-title.hot {
+  font-weight: 500;
+  border-bottom: 1px solid #00f;
+}
+.cpt-tabs-content {
+  padding: 16px;
+}
+/* .cpt-tab {} */
+
+/* .cpt-form { width: 100%; } */
+.cpt-form-body {
+  width: 100%;
+  display: table;
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+/* .cpt-form-foot {} */
+.cpt-form-foot .cpt-button {
+  margin: 0 8px;
+}
+.cpt-form-row {
+  display: table-row;
+  margin-bottom: 16px;
+}
+.cpt-form-left {
+  display: table-cell;
+}
+.cpt-form-left .required:before {
+  content: '*';
+  color: red;
+}
+.cpt-form-left .required:after {
+  content: ':';
+}
+.cpt-form-right {
+  display: table-cell;
+}
+
+.cpt-modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.25);
+}
+
+.cpt-toast-wrap {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 16px;
+  z-index: 5;
+}
+.cpt-toast {
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+.cpt-toast .success { color: green; }
+.cpt-toast .error { color: red; }
